@@ -17,7 +17,7 @@ Given some X and Y, we would like to use the SGD to find the B values. To do thi
 4. Using the errors we calculated, we will update the B values.
 5. Repeat the 2-4 steps until we get the required iteration times
 
-At the end of the process, if we used enough iterations, we will get close <img src="https://render.githubusercontent.com/render/math?math=B_{^}"> values to the real B values. An illustration of the iterative process can be seen in the following GIF:
+At the end of the process, if we used enough iterations, we will get close <img src="https://render.githubusercontent.com/render/math?math=\widehat{B}"> values to the real B values. An illustration of the iterative process can be seen in the following GIF:
 
 ![iterations](https://github.com/EtzionR/Linear-SGD/blob/main/pictures/iterations.gif)
 
