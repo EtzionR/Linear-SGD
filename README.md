@@ -37,6 +37,10 @@ When <img src="https://render.githubusercontent.com/render/math?math=\eta"> desc
 
 <img src="https://latex.codecogs.com/svg.image?M_{i&plus;1}&space;=&space;(\beta_{1}&space;\cdot&space;M_{i})&plus;&space;(1-\beta_{1})&space;\cdot&space;(\frac{\partial&space;Loss_{f}&space;}{\partial&space;B_{i}})" title="M_{i+1} = (\beta_{1} \cdot M_{i})+ (1-\beta_{1}) \cdot (\frac{\partial Loss_{f} }{\partial B_{i}})" />
 
+<img src="https://latex.codecogs.com/svg.image?V_{i&plus;1}&space;=&space;(\beta_{2}&space;\cdot&space;V_{i})&plus;&space;(1-\beta_{2})&space;\cdot&space;(\frac{\partial&space;Loss_{f}&space;}{\partial&space;B_{i}})^{2}" title="V_{i+1} = (\beta_{2} \cdot V_{i})+ (1-\beta_{2}) \cdot (\frac{\partial Loss_{f} }{\partial B_{i}})^{2}" />
+
+<img src="https://latex.codecogs.com/svg.image?\hat{M_{i+1}}&space;=&space;\frac{M_{i+1}}{1-\beta_{1}^{i+1}},&space;&space;&space;&space;&space;\hat{V_{i+1}}&space;=&space;\frac{V_{i+1}}{1-\beta_{2}^{i+1}}" title="\hat{M_{i+1}} = \frac{M_{i+1}}{1-\beta_{1}^{i+1}}, \hat{V_{i+1}} = \frac{V_{i+1}}{1-\beta_{2}^{i+1}}" />
+
 
 
 As mentioned, when we compare the two methods, it can be seen that ADAM really achieves better performance than the simple method (the lr values ​​selected for this illustration are optimal for each of the methods):
