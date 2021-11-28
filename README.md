@@ -27,11 +27,11 @@ To update the weight in the currect direction, we need to minimize the errors be
 
 So, the derivative can found by the following equation:
 
-<img src="https://latex.codecogs.com/svg.image?\frac{\partial&space;Loss_{f}&space;}{\partial&space;B}&space;=&space;-2\sum_{i}^{n}&space;X\cdot&space;(Y-BX)=&space;-2\sum_{i}^{n}&space;X\cdot&space;Errors" title="\frac{\partial Loss_{f} }{\partial B} = -2\sum_{i}^{n} X\cdot (Y-BX)= -2\sum_{i}^{n} X\cdot Errors" />
+<img src="https://latex.codecogs.com/svg.image?\frac{\partial&space;Loss_{f}&space;}{\partial&space;B}&space;=&space;\frac{-2}{n}\sum_{i}^{n}&space;X\cdot&space;(Y-BX)=&space;-2\sum_{i}^{n}&space;X\cdot&space;Errors" title="\frac{\partial Loss_{f} }{\partial B} = -2\sum_{i}^{n} X\cdot (Y-BX)= -2\sum_{i}^{n} X\cdot Errors" />
 
 Now, we can use this derivative to update each of our B values:
 
-<img src="https://latex.codecogs.com/svg.image?B_{i&plus;1}&space;=&space;B_{i}&space;-&space;\eta&space;\cdot&space;(\frac{\partial&space;Loss_{f}&space;}{\partial&space;B_{i}})=&space;B_{i}&space;-&space;\eta&space;\cdot&space;(&space;-\frac{2}{n}\sum_{i}^{n}&space;X_{\cdot&space;j}\cdot&space;Errors)&space;=&space;B_{i}&space;&plus;&space;(\frac{2\eta}{n}\sum_{i}^{n}&space;X_{\cdot&space;j}\cdot&space Errors)" title="B_{i+1} = B_{i} - \eta \cdot (\frac{\partial Loss_{f} }{\partial B_{i}})= B_{i} - \eta \cdot ( -\frac{2}{n}\sum_{i}^{n} X_{\cdot j}\cdot Errors) = B_{i} + (\frac{2\eta}{n}\sum_{i}^{n} X_{\cdot j}\cdot Errors)" />
+<img src="https://latex.codecogs.com/svg.image?B_{i&plus;1}&space;=&space;B_{i}&space;-&space;\eta&space;\cdot&space;(\frac{\partial&space;Loss_{f}&space;}{\partial&space;B_{i}})=&space;B_{i}&space;-&space;\eta&space;\cdot&space;(&space;-\frac{2}{n}\sum_{i}^{n}&space;X_{\cdot&space;j}\cdot&space;Errors)" title="B_{i+1} = B_{i} - \eta \cdot (\frac{\partial Loss_{f} }{\partial B_{i}})= B_{i} - \eta \cdot ( -\frac{2}{n}\sum_{i}^{n} X_{\cdot j}\cdot Errors)" />
 
 When N describes the learning rate of the change each time. This equation describes the simple method of updating the weights, while there are also other methods for even better optimization. One of them is ADAM, an algorithm designed to find the values ​​of the weights in a particularly efficient and fast way, based on adjusting the learning rate for each weight individually, as can be seen in the following equation:
 
