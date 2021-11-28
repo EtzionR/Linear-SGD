@@ -4,24 +4,24 @@
 Linear Regression SGD Optimization Implementation
 
 ## Overview
-The **SGD** algorithm used as **machine learning** method for weights optimization for given statistical model. The method based on multiple iterations, when in each iteration the model learns from the error of the prediction in order get better weight values. The code [**'sgd.py'**](https://github.com/EtzionR/Linear-SGD/sgd.py) used as from-scarch implementation of the SGD-Algorithm for a linear model.
+The **SGD** algorithm used as **machine learning** method for weights optimization in a given statistical model. The method based on iterative process, when in each iteration the model learns from the prediction  erorr in order to get better weight values. The code [**'sgd.py'**](https://github.com/EtzionR/Linear-SGD/sgd.py) used as such SGD-Algorithm method in from-scarch implementation for a linear model.
 
 The familiar linear model is based on matrix X and weights B, that for their product we get the Y values (in addition to bulit-in errors):
 
-<img src="https://render.githubusercontent.com/render/math?math=Y=BX+\varepsilon">
+<img src="https://latex.codecogs.com/svg.image?Y=BX&space;&plus;&space;\varepsilon" title="Y=BX + \varepsilon" />
 
-Given some X and Y, we would like to use the SGD to find the B values. To do this, we will follow this steps:
-1. Sample randomly the B values
-2. Stochastically sample only subset from the given data points.
-3. We will use B on the selected subset and calculated the errors between the prediction to Y.
-4. Using the errors we calculated, we will update the B values.
-5. Repeat the 2-4 steps until we get the required iteration times
+Given some X and Y, we would like to use the SGD method to find the B values. To do this, we will follow this steps:
+1. Sample randomly the B values.
+2. Stochastically sample only **subset** from the given data points.
+3. We will use B on the selected subset and calculated the **errors** between the prediction to Y.
+4. Using the errors we calculated, we will **update** the B values.
+5. **Repeat** the 2-4 steps until we get the required iteration times
 
 At the end of the process, if we used enough iterations, we will get close <img src="https://render.githubusercontent.com/render/math?math=\widehat{B}"> values to the real B values. An illustration of the iterative process can be seen in the following GIF:
 
 ![iterations](https://github.com/EtzionR/Linear-SGD/blob/main/pictures/iterations.gif)
 
-The process of updating the B values ​​we do through the graduate of the distribution of our model, and through it we update our weights, as can be seen in the following equation:
+The process of updating the B values we do through the graduate of the distribution of our model, and through it we update our weights, as can be seen in the following equation:
 
 When N describes the learning rate of the change each time. This equation describes the simple method of updating the weights, while there are also other methods for even better optimization. One of them is ADAM, an algorithm designed to find the values ​​of the weights in a particularly efficient and fast way, based on adjusting the learning rate for each weight individually, as can be seen in the following equation:
 
