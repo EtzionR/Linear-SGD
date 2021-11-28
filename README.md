@@ -41,7 +41,7 @@ When <img src="https://render.githubusercontent.com/render/math?math=\eta"> desc
 
 <img src="https://latex.codecogs.com/svg.image?\hat{M_{i+1}}&space;=&space;\frac{M_{i+1}}{1-\beta_{1}^{i+1}},&space;&space;&space;&space;&space;\hat{V_{i+1}}&space;=&space;\frac{V_{i+1}}{1-\beta_{2}^{i+1}}" title="\hat{M_{i+1}} = \frac{M_{i+1}}{1-\beta_{1}^{i+1}}, \hat{V_{i+1}} = \frac{V_{i+1}}{1-\beta_{2}^{i+1}}" />
 
-
+<img src="https://latex.codecogs.com/svg.image?B_{i&plus;1}&space;=&space;B_{i}&space;-&space;\eta&space;\cdot&space;(\frac{\hat{M_{i&plus;1}}}{\sqrt{\hat{V_{i&plus;1}}}&plus;\varepsilon})" title="B_{i+1} = B_{i} - \eta \cdot (\frac{\hat{M_{i+1}}}{\sqrt{\hat{V_{i+1}}}+\varepsilon})" />
 
 As mentioned, when we compare the two methods, it can be seen that ADAM really achieves better performance than the simple method (the lr values ​​selected for this illustration are optimal for each of the methods):
 
