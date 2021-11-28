@@ -82,9 +82,9 @@ The code uses the following libraries in Python:
 ## Application
 An application of the code is attached to this page under the name: 
 
-[**implementation.**]()
+[**implementation.py**](https://github.com/EtzionR/Linear-SGD/blob/main/implementation.py)
 
-The examples are also attached here [data]().
+The examples are also attached here [data](https://github.com/EtzionR/Linear-SGD/tree/main/examples).
 
 
 ## Example for using the code
