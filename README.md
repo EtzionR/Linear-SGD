@@ -58,20 +58,22 @@ When the original function is: <img src="https://latex.codecogs.com/svg.image?\f
 For more on the math behind the linear-polynomial regression model, you can see here: [**Poly Regression**](https://github.com/EtzionR/Polynomial-Regression-Optimizer)
 
 The [**'sgd.py'**](https://github.com/EtzionR/Linear-SGD/sgd.py) code also include built in plot function, so you can follow the loss by the number of the iterations:
+
+``` sh
 # import code
-
+from sgd import LinearSGD
 # load data
-
-# define variables
+x = np.load(...)
+y = np.load(...)
 
 # using the code
+LinearSGD(iters=400).fit(x,y).plot_loss()
+```
 
-# fitting the model
-
-# get prediction
+![plot](https://github.com/EtzionR/Linear-SGD/blob/main/pictures/plot_loss.png)
 
 ## Libraries
-The code uses the following library in Python:
+The code uses the following libraries in Python:
 
 **matplotlib**
 
@@ -82,29 +84,44 @@ An application of the code is attached to this page under the name:
 
 [**implementation.**]()
 
-The examples are also attached here [data](https://github.com/EtzionR/My-TF-AutoEncoder/tree/main/data).
+The examples are also attached here [data]().
 
 
 ## Example for using the code
 To use this code, you just need to import it as follows:
 ``` sh
 # import code
+from sgd import LinearSGD
 
 # load data
+x = np.load(...)
+y = np.load(...)
 
 # define variables
+lr = 0.01
+iters = 500
+sample_rate = .5
+adam = True
 
 # using the code
+model = LinearSGD(lr=lr, iters=iters, sample_rate=sample_rate, adam=adam)
 
 # fitting the model
+model.fit(x,y)
 
 # get prediction
-
+model.predict(x_new)
 ```
 
 When the variables displayed are:
 
 **lr:** float, the learning rate  (defualt = .001)
+
+**iters:** int, number of iteration  (defualt = 100)
+
+**sample_rate:** float, rate of sampling subset from the given data points  (defualt = .5)
+
+**adam:** bool, using ADAM optimizer, or simple method (defualt = True)
 
 ## License
 MIT © [Etzion Harari](https://github.com/EtzionR)
