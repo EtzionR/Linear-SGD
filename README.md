@@ -53,7 +53,7 @@ It should be noted that the code writed for application on the **multivariate li
 
 When the original function is: 
 
-<img src="https://latex.codecogs.com/svg.image?\frac{1}{2}X^{2}&space;&plus;&space;3X&space;&plus;&space;2" title="\frac{1}{2}X^{2} + 3X + 2" />
+<img src="https://latex.codecogs.com/svg.image?Y&space;=&space;\frac{1}{2}X^{2}&space;&plus;&space;3X&space;&plus;&space;2" title="Y = \frac{1}{2}X^{2} + 3X + 2" />
 
 For more on the math behind the linear-polynomial regression model, you can see here: [**Poly Regression**](https://github.com/EtzionR/Polynomial-Regression-Optimizer)
 
