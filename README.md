@@ -23,11 +23,11 @@ At the end of the process, if we used enough iterations, we will get close <img 
 
 To update the weight in the currect direction, we need to minimize the errors between our prediction to the actual values of Y. to do so, we want to use the **derivative** of our model loss function (that measure the distance between the prediction and the actual values). our loss look as the following equation:
 
-<img src="https://latex.codecogs.com/svg.image?Loss_{f}&space;=&space; \frac{1}{n}\sum_{i}^{n}(Y&space;-&space;\hat{B}X)^{2}" title="Loss_{f} = \frac{1}{n}\sum_{i}^{n}(Y - \hat{B}X)^{2}" />
+<img src="https://latex.codecogs.com/svg.image?Loss_{f}&space;=&space;\frac{1}{n}\sum_{i}^{n}(Y&space;-&space;\hat{B}X)^{2}" title="Loss_{f} = \frac{1}{n}\sum_{i}^{n}(Y - \hat{B}X)^{2}" />
 
 So, the derivative can found by the following equation:
 
-<img src="https://latex.codecogs.com/svg.image?\frac{\partial&space;Loss_{f}&space;}{\partial&space;B}&space;=&space;\frac{-2}{n}\sum_{i}^{n}&space;X\cdot&space;(Y-BX)=&space;-2\sum_{i}^{n}&space;X\cdot&space;Errors" title="\frac{\partial Loss_{f} }{\partial B} = -2\sum_{i}^{n} X\cdot (Y-BX)= -2\sum_{i}^{n} X\cdot Errors" />
+<img src="https://latex.codecogs.com/svg.image?\frac{\partial&space;Loss_{f}&space;}{\partial&space;B}&space;=&space;\frac{-2}{n}\sum_{i}^{n}&space;X\cdot&space;(Y-BX)=&space;-2\sum_{i}^{n}&space;X\cdot&space;Errors" title="\frac{\partial Loss_{f} }{\partial B} = -2\sum_{i}^{n} X\cdot (Y-BX)= \frac{-2}{n}\sum_{i}^{n} X\cdot Errors" />
 
 Now, we can use this derivative to update each of our B values:
 
