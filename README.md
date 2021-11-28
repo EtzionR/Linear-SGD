@@ -43,6 +43,8 @@ When <img src="https://render.githubusercontent.com/render/math?math=\eta"> desc
 
 <img src="https://latex.codecogs.com/svg.image?B_{i&plus;1}&space;=&space;B_{i}&space;-&space;\eta&space;\cdot&space;(\frac{\hat{M_{i&plus;1}}}{\sqrt{\hat{V_{i&plus;1}}}&plus;\varepsilon})" title="B_{i+1} = B_{i} - \eta \cdot (\frac{\hat{M_{i+1}}}{\sqrt{\hat{V_{i+1}}}+\varepsilon})" />
 
+when **i** is the iteration number and <img src="https://latex.codecogs.com/svg.image?\beta_{1}&space;=&space;0.9,&space;\beta_{2}&space;=&space;0.999,&space;M_{0}&space;=&space;0,&space;V_{0}&space;=&space;0" title="\beta_{1} = 0.9, \beta_{2} = 0.999, M_{0} = 0, V_{0} = 0" />
+
 As mentioned, when we compare the two methods, it can be seen that ADAM really achieves better performance than the simple method (the lr values ​​selected for this illustration are optimal for each of the methods):
 
 It should be noted that the code is intended for application for the multivariate linear model, but of course is also suitable for implementation for cases of polynomials, as can be seen here:
